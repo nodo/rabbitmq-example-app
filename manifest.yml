@@ -1,0 +1,10 @@
+---
+applications:
+  - name: rabbitmq-example-app
+    command: rabbitmq-example-app
+    instances: 3
+    buildpack: https://github.com/cloudfoundry/go-buildpack
+    health-check-type: process
+    env:
+      GOVERSION: go1.12
+
